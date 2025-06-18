@@ -16,10 +16,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-
 RDEPEND="
-	${PYTHON_DEPS}
 	dev-python/pathvalidate
 	dev-python/requests
 	media-libs/mutagen
