@@ -10,3 +10,5 @@ projects/lambdaman/lambdaman
 metadata/cache/
 metadata/md5-cache/
 profiles/use.local.desc
+
+sys-apps/pnpm-bin
