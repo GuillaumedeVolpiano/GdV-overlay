@@ -1,0 +1,21 @@
+From: https://codeberg.org/plotski/aiobtclientrpc/commit/d1ecc61dc948a88d80bbc5373557346d46b6bc61
+From: plotski <plotski@example.org>
+Date: Mon, 13 May 2024 11:24:25 +0200
+Subject: [PATCH] pyproject.toml: Exclude tests
+
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -50,11 +50,8 @@ Changelog = "https://codeberg.org/plotski/aiobtclientrpc/raw/branch/master/NEWS"
+ requires = ["setuptools"]
+ build-backend = "setuptools.build_meta"
+ 
+-# For some unknown reason, we need to specify explicity to scan the project
+-# directory with default parameters or setuptools gets confused about
+-# directories like "docs" or "venv".
+-[tool.setuptools.packages]
+-find = {}
++[tool.setuptools.packages.find]
++include = ["aiobtclientrpc*"]
+ 
+ [tool.setuptools.dynamic]
+ version = {attr = "aiobtclientrpc.__version__"}
