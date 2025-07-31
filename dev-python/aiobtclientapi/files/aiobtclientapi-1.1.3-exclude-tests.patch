@@ -15,7 +15,7 @@ Subject: [PATCH] pyproject.toml: Exclude tests
 -[tool.setuptools.packages]
 -find = {}
 +[tool.setuptools.packages.find]
-+include = ["aiobtclientrpc*"]
++include = ["aiobtclientapi*"]
  
  [tool.setuptools.dynamic]
  version = {attr = "aiobtclientrpc.__version__"}
