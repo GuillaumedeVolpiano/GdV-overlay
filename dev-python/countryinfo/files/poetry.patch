@@ -1,0 +1,17 @@
+From: https://github.com/porimol/countryinfo/pull/77
+From: GuillaumedeVolpiano <xavier@wheredoibegin.fr>
+Date: Thu, 14 Aug 2025 11:36:47 +0200
+Subject: [PATCH] fixing for recent versions of poetry
+
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -60,6 +60,9 @@ exclude = [
+ ]
+ max-line-length = 120
+ 
++[project]
++name = "countryinfo"
++
+ [project.urls]
+ Homepage = "https://github.com/porimol/countryinfo"
+ Documentation = "https://github.com/porimol/countryinfo"
