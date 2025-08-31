@@ -24,12 +24,17 @@ RDEPEND="
 	dev-python/beautifulsoup4
 	dev-python/bitstring
 	dev-python/click
+	dev-python/deluge-client
+	dev-python/ffmpeg-python
 	dev-python/filetype
 	dev-python/httpx
+	dev-python/humanfriendly
 	dev-python/jinja2
 	dev-python/musicbrainzngs
 	dev-python/msgspec
+	dev-python/pillow
 	dev-python/platformdirs
+	dev-python/pycambia
 	dev-python/pyperclip
 	dev-python/qbittorrent-api
 	dev-python/ratelimit
@@ -38,6 +43,7 @@ RDEPEND="
 	dev-python/send2trash
 	dev-python/tqdm
 	dev-python/torf
+	dev-python/transmission-rpc
 	dev-python/unidecode
 	media-gfx/oxipng
 	media-libs/flac
