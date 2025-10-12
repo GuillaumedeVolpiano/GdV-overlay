@@ -105,11 +105,11 @@ inherit cargo distutils-r1 pypi
 DESCRIPTION="Python wrapper for multithreaded .png image file optimizer oxipng"
 HOMEPAGE="https://github.com/nfrasser/pyoxipng"
 
-LICENSE="GPL-3"
 SRC_URI="
 	https://files.pythonhosted.org/packages/source/${PN:0:1}/${PN}/${P}.tar.gz
-	$(cargo_crate_uris ${CRATES})
+	$(cargo_crate_uris ${CARGO_CRATES_URIS})
 "
+LICENSE="GPL-3"
 
 SLOT="0"
 KEYWORDS="~amd64"
