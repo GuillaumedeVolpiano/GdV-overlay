@@ -7,7 +7,7 @@ EAPI=8
 
 CARGO_OPTIONAL=1
 DISTUTILS_USE_PEP517=maturin
-PYTHON_COMPAT=( python3_13 )
+PYTHON_COMPAT=(   python3_13 python3_14 python3_14 )
 CRATES="
 	Inflector@0.11.4
 	addr2line@0.24.2

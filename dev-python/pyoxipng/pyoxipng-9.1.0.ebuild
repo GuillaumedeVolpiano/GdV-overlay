@@ -97,7 +97,7 @@ CRATES="
 	zopfli@0.8.1
 "
 
-PYTHON_COMPAT=( python3_13 )
+PYTHON_COMPAT=(  python3_13 python3_14 )
 DISTUTILS_USE_PEP517=maturin
 
 inherit cargo distutils-r1 pypi
