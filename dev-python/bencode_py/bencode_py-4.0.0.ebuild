@@ -5,20 +5,14 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=(  python3_13 python3_14 )
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+PYPI_PN="bencode.py"
+inherit distutils-r1 pypi
 
 DESCRIPTION="Simple bencode parser for python"
-HOMEPAGE="
-	https://pypi.org/project/bencode_py/
-	https://github.com/fuzeman/bencode.py
-"
-MY_PN="bencode.py"
-MY_P="${MY_PN}-${PV}"
+HOMEPAGE="https://github.com/fuzeman/bencode.py"
 
-SRC_URI="https://files.pythonhosted.org/packages/source/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 KEYWORDS="~amd64 ~x86"
-
-S="${WORKDIR}/${MY_P}"
 
 LICENSE="BOSL-1.1"
 SLOT="0"
