@@ -1,0 +1,25 @@
+From 7766e2616187f7ebe99ee1e919a8be19a598a9e0 Mon Sep 17 00:00:00 2001
+From: GuillaumedeVolpiano <xavier@wheredoibegin.fr>
+Date: Tue, 11 Nov 2025 12:53:56 +0100
+Subject: [PATCH] b
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 5eab518..9125886 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -312,7 +312,7 @@ if(ENABLE_TESTS)
+     # Use EXCLUDE_FROM_ALL to prevent installing googletest headers as part of
+     # 'make install'.
+     set(BUILD_GMOCK 1)
+-    add_subdirectory(googletest EXCLUDE_FROM_ALL)
++	#add_subdirectory(googletest EXCLUDE_FROM_ALL)
+ 
+     set(TESTS
+         test/FileFormatTest.cpp
+-- 
+2.51.0
+
