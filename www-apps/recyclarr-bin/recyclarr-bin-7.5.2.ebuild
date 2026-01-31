@@ -54,18 +54,12 @@ src_prepare() {
 }
 
 src_install() {
-	newinitd "${FILESDIR}/recyclarr.init-r2" recyclarr
-
 	keepdir /var/lib/recyclarr
 	fowners -R recyclarr:recyclarr /var/lib/recyclarr
 
 	insinto /etc/logrotate.d
 	insopts -m0644 -o root -g root
-	newins "${FILESDIR}/recyclarr.logrotate" recyclarr
 
 	dodir  "/opt/recyclarr"
 	cp -R "${S}/." "${D}/opt/recyclarr" || die "Install failed!"
-
-	systemd_newunit "${FILESDIR}/recyclarr.service-r1" "recyclarr.service"
-	systemd_newunit "${FILESDIR}/recyclarr.service-r1" "recyclarr@.service"
 }
