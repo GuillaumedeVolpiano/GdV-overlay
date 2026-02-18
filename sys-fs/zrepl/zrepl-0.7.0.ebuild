@@ -9,7 +9,7 @@ DESCRIPTION="One-stop ZFS backup & replication solution"
 HOMEPAGE="https://github.com/zrepl/zrepl"
 
 SRC_URI="https://github.com/zrepl/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
-		 https://github.com/GuillaumedeVolpiano/GdV-overlay/releases/download/${P^}/${P}-deps.tar.xz"
+		 https://github.com/GuillaumedeVolpiano/GdV-overlay/releases/download/${P}/${P}-deps.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -61,7 +61,7 @@ src_install() {
 	fi
 
 	insinto "/usr/share/${PN}/samples"
-	doins config/samples/*
+	doins internal/config/samples/*
 
 	# doinitd dist/openrc/zrepl
 	newinitd "${FILESDIR}/zrepl-0.6.1.initd" zrepl
