@@ -18,7 +18,6 @@ KEYWORDS="~amd64"
 DOCS=( README.md conf/simple.conf )
 
 src_compile() {
-	GOARCH= ego build
 	mkdir "${S}/tmp"
 	make build
 }
